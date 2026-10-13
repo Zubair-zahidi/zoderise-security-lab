@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Zoderise Security Lab</title><desc id="desc">Defensive utilities, Linux practice, and local web labs.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1524"/><stop offset="1" stop-color="#143b43"/></linearGradient></defs>
+  <rect width="1200" height="280" rx="18" fill="url(#bg)"/>
+  <path d="M998 43l98 37v68c0 50-43 79-98 105-55-26-98-55-98-105V80z" fill="none" stroke="#8dd9bf" stroke-width="3"/>
+  <path d="M954 143l28 28 63-65" fill="none" stroke="#e8c88b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="58" y="57" width="46" height="4" rx="2" fill="#8dd9bf"/>
+  <text x="58" y="101" fill="#8dd9bf" font-family="Segoe UI,Arial,sans-serif" font-size="17" letter-spacing="4">LEARN · REVIEW · DOCUMENT</text>
+  <text x="54" y="166" fill="#f0f4ed" font-family="Segoe UI,Arial,sans-serif" font-size="47" font-weight="700">Zoderise Security Lab</text>
+  <text x="58" y="211" fill="#c1d3d8" font-family="Segoe UI,Arial,sans-serif" font-size="23">Defensive utilities · Linux practice · Local web labs</text>
+</svg>
