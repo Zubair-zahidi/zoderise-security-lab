@@ -12,6 +12,15 @@ from security_lab import create_baseline, verify_baseline, check_headers, check_
 
 
 class LabTests(unittest.TestCase):
+    def test_non_object_baseline_is_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            baseline = root/'baseline.json'
+            for value in (None, [], 'invalid', 42):
+                baseline.write_text(json.dumps(value))
+                with self.subTest(value=value), self.assertRaises(ValueError):
+                    verify_baseline(root, baseline)
+
     def test_integrity_changes_and_baseline_exclusion(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

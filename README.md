@@ -4,7 +4,7 @@
 
 # Zoderise Security Lab
 
-A small, inspectable Python toolkit for learning defensive security through local experiments. It records file hashes, reviews selected HTTP response headers on a loopback server, and reports POSIX permission bits that deserve attention.
+An inspectable Python toolkit for learning defensive security through repeatable local experiments. It records file hashes, reviews selected HTTP response headers on a loopback server, and reports POSIX permission bits that deserve attention.
 
 Created by **Zubair Zahidi** as a practical starting point for a cybersecurity and ethical-hacking learning portfolio.
 
@@ -67,3 +67,9 @@ Tests exercise integrity changes, unsafe baseline paths, loopback header inspect
 Use the toolkit on your own files and authorized lab systems. These utilities are learning aids, not a penetration-test report, malware detector, compliance certification, or complete security audit. Files can change while hashing; use a quiet folder for a stable comparison. Symbolic links and common Git/virtual-environment cache directories are excluded. Reviews stop at 10,000 paths to keep lab runs bounded.
 
 Never commit credentials, packet captures containing private traffic, or real customer data. Keep reports in protected storage and remove identifying details before sharing a learning write-up.
+
+## Cloud review preview
+
+![Cloud capture of zoderise-security-lab](docs/cloud-review/desktop-2026-10-22.png)
+
+Captured from the running project on 22 October 2026. This is a browser rendering of actual CLI output and test results. The project has no graphical application.

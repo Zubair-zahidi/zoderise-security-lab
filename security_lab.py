@@ -57,6 +57,8 @@ def create_baseline(root: Path, output: Path) -> dict:
 
 def verify_baseline(root: Path, baseline_path: Path) -> dict:
     baseline = json.loads(baseline_path.read_text(encoding='utf-8'))
+    if not isinstance(baseline, dict):
+        raise ValueError('Unsupported baseline format.')
     if baseline.get('format') != 'zoderise-integrity-v1' or baseline.get('algorithm') != 'sha256':
         raise ValueError('Unsupported baseline format.')
     expected = baseline.get('files')
